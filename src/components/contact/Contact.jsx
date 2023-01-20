@@ -95,8 +95,7 @@ const Contact = () => {
               placeholder="Message"
               name="message"
             />
-            {done?
-             "Thank you...":<button disabled={done}>Submit</button>}
+            {done ? "Thank you..." : <button disabled={done}>Submit</button>}
           </form>
         </div>
       </div>

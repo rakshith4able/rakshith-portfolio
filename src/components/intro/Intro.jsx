@@ -1,5 +1,6 @@
 import "./intro.css";
-import Me from "../../img/me.png";
+
+import { HiDocumentText as ResumeIcon } from "react-icons/hi";
 
 const Intro = () => {
   return (
@@ -12,12 +13,12 @@ const Intro = () => {
             <div className="i-title-wrapper">
               <div className="i-title-item">Software Engineer</div>
               <div className="i-title-item">MERN Stack Developer</div>
-
             </div>
           </div>
           <p className="i-desc">
             I design and develop services for customers of all sizes,
-            specializing in creating stylish, modern websites and web applications.
+            specializing in creating stylish, modern websites and web
+            applications.
           </p>
         </div>
         <svg
@@ -79,7 +80,16 @@ const Intro = () => {
       </div>
       <div className="i-right">
         <div className="i-bg"></div>
-        <img src={Me} alt="" className="i-img" />
+        <div
+          className="i-cv"
+          onClick={() => {
+            window.open(
+              "https://drive.google.com/uc?id=1vLMKrI7J2AlO12g5B56fuRRWgKEHLsOw&authuser=0&export=download"
+            );
+          }}
+        >
+          Download Resume <ResumeIcon style={{ fontSize: "2rem" }} />
+        </div>
       </div>
     </div>
   );
