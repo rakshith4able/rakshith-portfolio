@@ -97,6 +97,7 @@
   border-radius: .2em;
   font-size: 1.2;
   display: flex ;
+  color: #000;
   align-items: center;
   cursor: pointer ;
 }
