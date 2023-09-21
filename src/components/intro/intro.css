@@ -55,6 +55,17 @@
   }
 }
 
+@keyframes blink {
+  0% { opacity: 1; } /* Fully visible */
+  50% { opacity: 0; } /* Invisible */
+  1000% { opacity: 1; } /* Fully visible again */
+}
+
+/* Apply the animation to the svg element */
+.blinking-scroll {
+  animation: blink 2s ease-in-out infinite; /* 2s duration, ease-in-out timing, infinite loop */
+}
+
 .i-title-item {
   height: 50px;
   font-size: 30px;
@@ -89,6 +100,8 @@
   top: 0;
   right: 0;
 }
+
+
 
 .i-cv{
   z-index: 1 ;

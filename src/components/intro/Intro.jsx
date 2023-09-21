@@ -11,14 +11,14 @@ const Intro = () => {
           <h1 className="i-name">Rakshith Raj G P</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
+              <div className="i-title-item">Cyber Enthusiast</div>
+              <div className="i-title-item">Pentest Learner</div>
               <div className="i-title-item">Software Engineer</div>
-              <div className="i-title-item">MERN Stack Developer</div>
             </div>
           </div>
           <p className="i-desc">
-            I design and develop services for customers of all sizes,
-            specializing in creating stylish, modern websites and web
-            applications.
+            With a passion for protecting the virtual world, I'm dedicated to
+            mastering the art of cybersecurity
           </p>
         </div>
         <svg
@@ -30,7 +30,7 @@ const Intro = () => {
           className="i-scroll"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g id="scroll">
+          <g id="scroll" className="blinking-scroll">
             <path
               id="Vector"
               d="M40.5 15L34.5 9L28.5 15"
@@ -84,7 +84,7 @@ const Intro = () => {
           className="i-cv"
           onClick={() => {
             window.open(
-              "https://drive.google.com/uc?id=1vLMKrI7J2AlO12g5B56fuRRWgKEHLsOw&authuser=0&export=download"
+              "https://drive.google.com/uc?id=1Iuj_sm_6l3qugQtbEJyS9FGvITlFBDim&authuser=0&export=download"
             );
           }}
         >

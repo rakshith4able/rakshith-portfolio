@@ -15,6 +15,7 @@
 
 .a-right {
   flex: 1;
+  padding:5px;
 }
 
 .a-card.bg {
@@ -53,6 +54,7 @@
 
 .a-desc {
   font-weight: 300;
+ 
 }
 
 .a-award {
