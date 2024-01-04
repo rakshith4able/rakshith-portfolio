@@ -1,6 +1,6 @@
-import "./product.css";
+import "./project.css";
 
-const Product = ({ img, link }) => {
+const Project = ({ img, link }) => {
   return (
     <div className="p">
       <div className="p-browser">
@@ -15,4 +15,4 @@ const Product = ({ img, link }) => {
   );
 };
 
-export default Product;
+export default Project;

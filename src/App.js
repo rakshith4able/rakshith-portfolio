@@ -3,7 +3,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import Experience from "./components/experience/Experience";
-import ProductList from "./components/productList/ProductList";
+import ProjectList from "./components/projectList/ProjectList";
 import Toggle from "./components/toggle/Toggle";
 import Skills from "./components/skills/skills";
 import { ThemeContext } from "./context";
@@ -25,9 +25,9 @@ const App = () => {
       <Intro />
       <About />
       <Skills />
-      <Certifications/>
+      <Certifications />
       <Experience />
-      <ProductList />
+      <ProjectList />
       <Contact />
     </div>
   );

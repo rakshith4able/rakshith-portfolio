@@ -1,4 +1,4 @@
-export const products = [
+export const projects = [
   {
     id: 6,
     img: "https://i.ibb.co/rGPwCkc/data.jpg",
