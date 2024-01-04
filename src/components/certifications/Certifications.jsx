@@ -1,41 +1,44 @@
-import CloudsideLogo from "../../img/cloudside.png";
-import AteuLogo from "../../img/ateu.png";
+import { Carousel } from "antd";
 import "./certifications.css";
-
-const companies = [
-  {
-    name: "Cloudside Technologies",
-    role: "Software Engineer",
-    location: "Bengaluru",
-    duration: "Dec 2021-Dec 2022",
-    website: "https://thecloudside.com/",
-    logo: CloudsideLogo,
-    background: "#EA702D",
-    workArea:
-      "React, NodeJS, Front-end, Back-end, Data Visualization, Data Analysis, ChartJS,D3.js, Nivo, Javascript, Python, Typescript, Flask, Jupiter, SQL, MongoDB ",
-  },
-  {
-    name: "ATEU Softwares",
-    role: "Web Developer Intern",
-    location: "Mysuru",
-    duration: "Aug 2020-Sept 2020",
-    website: "https://www.ateusoftwares.com/",
-    logo: AteuLogo,
-    background: "#068932",
-    workArea:
-      "Web Development, Wordpress, App Development, Web Design, Web Hosting, Bootstrap, MySQL, PHP",
-  },
-];
+import PJPT from "../../img/pjpt.png";
+import Hackerrank from "../../img/js.png";
 
 const Certifications = () => {
   return (
-    <div className="e">
-      <div className="e-texts">
-        <h1 className="e-title">Certifications</h1>
-        <p className="e-desc"></p>
+    <div className="cert">
+      <div className="cert-texts">
+        <h1 className="cert-title">Certifications</h1>
+        <p className="cert-desc"></p>
       </div>
-      <div className="e-container">
-   
+      <div className="cert-container">
+        <Carousel autoplay>
+          <div>
+            <div className="cert-carousel-content-style">
+              <img
+                className="cert-carousel-img-style"
+                src={PJPT}
+                onClick={() => {
+                  window.open(
+                    "https://www.credential.net/e1ed5fdb-ce2f-4a3d-b4bb-f0e68b67dea1?key=1163b1a7d6fe2f04f9deca1b0f85c523785816962ff16dd1ba6df444e82be88d&record_view=true#gs.34lg0l"
+                  );
+                }}
+              />
+            </div>
+          </div>
+          <div>
+            <div className="cert-carousel-content-style">
+              <img
+                className="cert-carousel-img-style"
+                src={Hackerrank}
+                onClick={() => {
+                  window.open(
+                    "https://www.hackerrank.com/certificates/455cd8a160cf"
+                  );
+                }}
+              />
+            </div>
+          </div>
+        </Carousel>
       </div>
     </div>
   );
