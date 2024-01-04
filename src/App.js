@@ -9,6 +9,7 @@ import Skills from "./components/skills/skills";
 import { ThemeContext } from "./context";
 
 import "./App.css";
+import Certifications from "./components/certifications/Certifications";
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -24,6 +25,7 @@ const App = () => {
       <Intro />
       <About />
       <Skills />
+      <Certifications/>
       <Experience />
       <ProductList />
       <Contact />

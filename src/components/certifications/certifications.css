@@ -1,0 +1,39 @@
+.e {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .e-texts {
+    width: 65%;
+  }
+  
+  .e-title {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .e-desc {
+    margin: 20px 0px;
+  }
+  
+  .e-container {
+    width: 100%;
+    background-color: #333;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .e {
+      padding: 10px;
+    }
+  
+    .e-texts {
+      width: 100%;
+    }
+  
+    .e-desc {
+      display: none;
+    }
+  }

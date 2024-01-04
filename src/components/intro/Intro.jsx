@@ -1,6 +1,9 @@
 import "./intro.css";
 
-import { HiDocumentText as ResumeIcon } from "react-icons/hi";
+import { FaFileDownload as ResumeIcon } from "react-icons/fa";
+
+import { ImLinkedin as LinkedInIcon } from "react-icons/im";
+import { FaGithub as GithubIcon } from "react-icons/fa";
 
 const Intro = () => {
   return (
@@ -12,7 +15,7 @@ const Intro = () => {
           <div className="i-title">
             <div className="i-title-wrapper">
               <div className="i-title-item">Cyber Enthusiast</div>
-              <div className="i-title-item">Pentest Learner</div>
+              <div className="i-title-item">Penetration tester</div>
               <div className="i-title-item">Software Engineer</div>
             </div>
           </div>
@@ -80,15 +83,38 @@ const Intro = () => {
       </div>
       <div className="i-right">
         <div className="i-bg"></div>
-        <div
-          className="i-cv"
-          onClick={() => {
-            window.open(
-              "https://drive.google.com/uc?id=1Iuj_sm_6l3qugQtbEJyS9FGvITlFBDim&authuser=0&export=download"
-            );
-          }}
-        >
-          Download Resume <ResumeIcon style={{ fontSize: "2rem" }} />
+
+        <div className="i-links">
+          <div class="tooltip">
+            <LinkedInIcon
+              className="i-link"
+              onClick={() => {
+                window.open("https://www.linkedin.com/in/rakshithrajgp/");
+              }}
+            />
+            <span class="tooltiptext">LinkedIn</span>
+          </div>
+          <div class="tooltip">
+            <GithubIcon
+              onClick={() => {
+                window.open("https://github.com/rakshith4able/");
+              }}
+              className="i-link"
+            />
+            <span class="tooltiptext">Github</span>
+          </div>
+          <div class="tooltip">
+            <ResumeIcon
+              className="i-link"
+              onClick={() => {
+                window.open(
+                  "https://drive.usercontent.google.com/download?id=1ZxLyPG-p6N1UyDPrJdlmV0CDI-okddVV&export=download"
+                );
+              }}
+              style={{ fontSize: "2rem" }}
+            />
+            <span class="tooltiptext">My Resume</span>
+          </div>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import "./about.css";
-import Award from "../../img/award.png";
+import Award from "../../img/js.png";
 
 const About = () => {
   return (
@@ -31,18 +31,8 @@ const About = () => {
           a practical setting. Let's connect to discuss how I can contribute to
           your cybersecurity objectives.
         </p>
-        <div className="a-award">
-          <a href="https://www.hackerrank.com/certificates/455cd8a160cf">
-            <img src={Award} alt="" className="a-award-img" />
-          </a>
-          <div className="a-award-texts">
-            <h4 className="a-award-title">Javascript Intermediate</h4>
-            <p className="a-award-desc">
-              Certified in Intermediate JavaScript by HackerRank for
-              problem-solving proficiency.
-            </p>
-          </div>
-        </div>
+      
+      
       </div>
     </div>
   );
