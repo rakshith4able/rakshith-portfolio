@@ -18,7 +18,7 @@ const companies = [
     logo: CloudsideLogo,
     background: "#EA702D",
     workArea:
-      "React, NodeJS, Front-end, Back-end, Data Visualization, Data Analysis, ChartJS,D3.js, Nivo, Javascript, Python, Typescript, Flask, Jupiter, SQL, MongoDB ",
+      "React, NodeJS, Front-end, Back-end, Data Visualization, Data Analysis, ChartJS,D3.js, Nivo, Javascript, Python, Typescript, Flask, Jupyter, SQL, MongoDB ",
   },
   {
     name: "ATEU Softwares",

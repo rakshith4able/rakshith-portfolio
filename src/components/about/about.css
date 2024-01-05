@@ -2,6 +2,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .a-left {
@@ -15,7 +16,7 @@
 
 .a-right {
   flex: 1;
-  padding:5px;
+  padding: 5px;
 }
 
 .a-card.bg {
@@ -54,7 +55,6 @@
 
 .a-desc {
   font-weight: 300;
- 
 }
 
 .a-award {
@@ -74,7 +74,7 @@
   margin-bottom: 10px;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 700px) {
   .a {
     flex-direction: column;
     text-align: center;

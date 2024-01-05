@@ -82,7 +82,7 @@ button {
 
 a{
   text-decoration: none;
-  color: #000;
+  color: inherit
 }
 
 @media screen and (max-width: 480px) {

@@ -1,18 +1,21 @@
-import "./project.css";
-
-const Project = ({ img, link }) => {
+import React, { useState } from "react";
+import { Button, Modal } from "antd";
+const Project = ({ open, setOpen, item }) => {
   return (
-    <div className="p">
-      <div className="p-browser">
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-      </div>
-      <a href={link} target="_blank" rel="noreferrer">
-        <img src={img} alt="" className="p-img" />
-      </a>
-    </div>
+    <>
+      <Modal
+        title={item.title}
+        centered
+        open={open}
+        onOk={() => setOpen(false)}
+        onCancel={() => setOpen(false)}
+        okButtonProps={{style:{visibility:"hidden"}}}
+        cancelButtonProps={{style:{visibility:"hidden"}}}
+        width={1000}
+      >
+        {item.description}
+      </Modal>
+    </>
   );
 };
-
 export default Project;

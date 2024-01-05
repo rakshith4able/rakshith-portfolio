@@ -54,6 +54,13 @@
   display: block;
 }
 
+
+@media screen and (max-width: 700px) {
+  .s-title {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .s {
     padding: 10px;
