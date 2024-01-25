@@ -14,14 +14,14 @@ const Intro = () => {
           <h1 className="i-name">Rakshith Raj G P</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
+              <div className="i-title-item">Software Engineer</div>
               <div className="i-title-item">Cyber Enthusiast</div>
               <div className="i-title-item">Penetration tester</div>
-              <div className="i-title-item">Software Engineer</div>
             </div>
           </div>
           <p className="i-desc">
-            With a passion for protecting the virtual world, I'm dedicated to
-            mastering the art of cybersecurity
+            Blending software mastery and cybersecurity commitment, I'm on a
+            quest for comprehensive virtual protection.
           </p>
         </div>
         <svg

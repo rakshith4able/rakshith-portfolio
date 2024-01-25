@@ -1,25 +1,25 @@
-import s1 from "../../img/skills/aircrack-ng-logo.svg";
-import s2 from "../../img/skills/amass-logo.svg";
-import s3 from "../../img/skills/burpsuite-logo.svg";
-import s4 from "../../img/skills/crunch-logo.svg";
-import s5 from "../../img/skills/dirb-logo.svg";
-import s6 from "../../img/skills/dirbuster-logo.svg";
-import s7 from "../../img/skills/ettercap.svg";
-import s8 from "../../img/skills/hashcat-logo.svg";
-import s9 from "../../img/skills/hydra-logo.svg";
-import s10 from "../../img/skills/john-logo.svg";
-import s11 from "../../img/skills/kali-logo.svg";
-import s12 from "../../img/skills/metasploit-framework-logo.svg";
-import s13 from "../../img/skills/netcat-logo.svg";
-import s14 from "../../img/skills/netdiscover-logo.svg";
-import s15 from "../../img/skills/nikto.svg";
-import s16 from "../../img/skills/nmap-logo.svg";
-import s17 from "../../img/skills/powershell-logo.svg";
-import s19 from "../../img/skills/whatweb-logo.svg";
-import s20 from "../../img/skills/wifite-logo.svg";
-import s21 from "../../img/skills/wireshark-logo.svg";
+import s1 from "../../img/skills/cyber/aircrack-ng-logo.svg";
+import s2 from "../../img/skills/cyber/amass-logo.svg";
+import s3 from "../../img/skills/cyber/burpsuite-logo.svg";
+import s4 from "../../img/skills/cyber/crunch-logo.svg";
+import s5 from "../../img/skills/cyber/dirb-logo.svg";
+import s6 from "../../img/skills/cyber/dirbuster-logo.svg";
+import s7 from "../../img/skills/cyber/ettercap.svg";
+import s8 from "../../img/skills/cyber/hashcat-logo.svg";
+import s9 from "../../img/skills/cyber/hydra-logo.svg";
+import s10 from "../../img/skills/cyber/john-logo.svg";
+import s11 from "../../img/skills/cyber/kali-logo.svg";
+import s12 from "../../img/skills/cyber/metasploit-framework-logo.svg";
+import s13 from "../../img/skills/cyber/netcat-logo.svg";
+import s14 from "../../img/skills/cyber/netdiscover-logo.svg";
+import s15 from "../../img/skills/cyber/nikto.svg";
+import s16 from "../../img/skills/cyber/nmap-logo.svg";
+import s17 from "../../img/skills/cyber/powershell-logo.svg";
+import s19 from "../../img/skills/cyber/whatweb-logo.svg";
+import s20 from "../../img/skills/cyber/wifite-logo.svg";
+import s21 from "../../img/skills/cyber/wireshark-logo.svg";
 
-const svgFiles = [
+const cybersvgFiles = [
   {
     id: 1,
     file: s1,
@@ -125,4 +125,4 @@ const svgFiles = [
   // Add more SVG data entries as needed
 ];
 
-export { svgFiles };
+export { cybersvgFiles };
