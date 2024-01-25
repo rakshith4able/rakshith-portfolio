@@ -16,7 +16,7 @@ const About = () => {
       </div>
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
-        <p className="a-sub">Welcome to my portfolio website!.</p>
+        <p className="a-sub">Welcome to my portfolio website!</p>
         <p className="a-desc">
           I'm Rakshith Raj G P, a graduate student at Concordia University,
           currently pursuing an MEng in Information Systems Security. With a
