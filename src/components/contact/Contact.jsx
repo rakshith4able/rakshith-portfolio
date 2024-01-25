@@ -25,6 +25,8 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setDone(true);
+        // Reset the form fields
+          formRef.current.reset();
         },
         (error) => {
           alert("Coudn't reach Rakshith! Try after some time");
@@ -70,7 +72,7 @@ const Contact = () => {
               placeholder="Name"
               name="user_name"
             />
-              <input
+            <input
               style={{
                 backgroundColor: darkMode && "#333",
                 color: darkMode && "white",
@@ -79,7 +81,7 @@ const Contact = () => {
               placeholder="Subject"
               name="user_subject"
             />
-         
+
             <input
               style={{
                 backgroundColor: darkMode && "#333",
@@ -89,7 +91,7 @@ const Contact = () => {
               placeholder="Email"
               name="user_email"
             />
-       
+
             <textarea
               style={{
                 backgroundColor: darkMode && "#333",
