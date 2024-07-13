@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function SEO() {
   return (
-    <Helmet>
+    <Helmet prioritizeSeoTags>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta
