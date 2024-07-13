@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Avatar, List, Radio, Space } from "antd";
+import { List } from "antd";
 import Project from "../project/Project";
 import "./projectList.css";
 import { projects } from "./project-data";
@@ -19,7 +19,7 @@ const ProjectList = () => {
             align: "center",
             pageSize: 3,
           }}
-          style={{width:'100%'}}
+          style={{ width: "100%" }}
           dataSource={projects}
           renderItem={(item, index) => (
             <List.Item
@@ -33,7 +33,6 @@ const ProjectList = () => {
                 className="pl-list-item-meta"
                 avatar={item.avatar}
                 title={item.title}
-                
               />
             </List.Item>
           )}

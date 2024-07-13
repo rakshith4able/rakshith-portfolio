@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Button, Modal } from "antd";
+import React from "react";
+import { Modal } from "antd";
 const Project = ({ open, setOpen, item }) => {
   return (
     <>
@@ -9,8 +9,8 @@ const Project = ({ open, setOpen, item }) => {
         open={open}
         onOk={() => setOpen(false)}
         onCancel={() => setOpen(false)}
-        okButtonProps={{style:{visibility:"hidden"}}}
-        cancelButtonProps={{style:{visibility:"hidden"}}}
+        okButtonProps={{ style: { visibility: "hidden" } }}
+        cancelButtonProps={{ style: { visibility: "hidden" } }}
         width={1000}
       >
         {item.description}

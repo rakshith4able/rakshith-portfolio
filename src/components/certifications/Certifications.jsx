@@ -22,6 +22,7 @@ const Certifications = () => {
                     "https://www.credential.net/e1ed5fdb-ce2f-4a3d-b4bb-f0e68b67dea1?key=1163b1a7d6fe2f04f9deca1b0f85c523785816962ff16dd1ba6df444e82be88d&record_view=true#gs.34lg0l"
                   );
                 }}
+                alt="PJPT certificate"
               />
             </div>
           </div>
@@ -35,6 +36,7 @@ const Certifications = () => {
                     "https://www.hackerrank.com/certificates/455cd8a160cf"
                   );
                 }}
+                alt="Hackerank Intermediate Javascript Developer Certificate"
               />
             </div>
           </div>
