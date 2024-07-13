@@ -85,25 +85,25 @@ const Intro = () => {
         <div className="i-bg"></div>
 
         <div className="i-links">
-          <div class="tooltip">
+          <div className="tooltip">
             <LinkedInIcon
               className="i-link"
               onClick={() => {
                 window.open("https://www.linkedin.com/in/rakshithrajgp/");
               }}
             />
-            <span class="tooltiptext">LinkedIn</span>
+            <span className="tooltiptext">LinkedIn</span>
           </div>
-          <div class="tooltip">
+          <div className="tooltip">
             <GithubIcon
               onClick={() => {
                 window.open("https://github.com/rakshith4able/");
               }}
               className="i-link"
             />
-            <span class="tooltiptext">Github</span>
+            <span className="tooltiptext">Github</span>
           </div>
-          <div class="tooltip">
+          <div className="tooltip">
             <ResumeIcon
               className="i-link"
               onClick={() => {
@@ -113,7 +113,7 @@ const Intro = () => {
               }}
               style={{ fontSize: "2rem" }}
             />
-            <span class="tooltiptext">My Resume</span>
+            <span className="tooltiptext">My Resume</span>
           </div>
         </div>
       </div>
