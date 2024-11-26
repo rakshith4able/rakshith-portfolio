@@ -5,10 +5,22 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import CloudsideLogo from "../../img/cloudside.png";
+import Th3rdplaceLogo from "../../img/Th3rdplace.svg";
 import AteuLogo from "../../img/ateu.png";
 import "./experience.css";
 
 const companies = [
+  {
+    name: "Th3rdplace",
+    role: "Software Developer (Contract)",
+    location: "Montreal, QC",
+    duration: "July 2024-Nov 2024",
+    website: "https://th3rdplace.com/",
+    logo: Th3rdplaceLogo,
+    background: "#6f42c1",
+    workArea:
+      "React, NodeJS, Full-stack, GCP, Typescript, Bash Scripting, Firebase, Database, API development, Application Integration",
+  },
   {
     name: "Cloudside Technologies",
     role: "Software Engineer",
@@ -51,9 +63,15 @@ const Experience = () => {
                 borderRight: `7px solid  ${company.background}`,
               }}
               date={company.duration}
-              iconStyle={{ background: "#fff", color: "#fff",cursor:'pointer' }}
+              iconStyle={{
+                background: "#fff",
+                color: "#fff",
+                cursor: "pointer",
+              }}
               icon={<img src={company.logo} width="100%" alt={company.name} />}
-              iconOnClick={()=>{window.open(company.website)}}
+              iconOnClick={() => {
+                window.open(company.website);
+              }}
             >
               <h3 className="vertical-timeline-element-title">
                 {`${company.name} - ${company.role}`}
