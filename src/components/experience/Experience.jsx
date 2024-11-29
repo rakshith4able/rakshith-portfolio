@@ -5,7 +5,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import CloudsideLogo from "../../img/cloudside.png";
-import Th3rdplaceLogo from "../../img/Th3rdplace.svg";
+import Th3rdplaceLogo from "../../img/Th3rdplace.png";
 import AteuLogo from "../../img/ateu.png";
 import "./experience.css";
 
