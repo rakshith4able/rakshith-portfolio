@@ -138,7 +138,7 @@ export const projects = [
             <a
               href="https://github.com/rakshith4able/RealTime-Webcam-Recorder-Player"
               target="_blank"
-              rel='noreferrer'
+              rel="noreferrer"
             >
               RealTime-Webcam-Recorder-Player
             </a>
@@ -169,8 +169,11 @@ export const projects = [
           </li>
           <li>
             Hosted the portfolio on Firebase
-            <a href="https://rakshith-portfolio.web.app/" target="_blank"
-            rel='noreferrer'>
+            <a
+              href="https://rakshith-portfolio.web.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               (website)
             </a>
             , providing reliable and scalable web hosting.
@@ -189,7 +192,7 @@ export const projects = [
             <a
               href="https://github.com/rakshith4able/rakshith-portfolio"
               target="_blank"
-              rel='noreferrer'
+              rel="noreferrer"
             >
               rakshith-portfolio
             </a>
@@ -234,7 +237,7 @@ export const projects = [
             <a
               href="https://github.com/rakshith4able/reqres-users-app"
               target="_blank"
-              rel='noreferrer'
+              rel="noreferrer"
             >
               reqres-users-app
             </a>

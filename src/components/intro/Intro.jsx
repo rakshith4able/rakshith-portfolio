@@ -1,7 +1,5 @@
 import "./intro.css";
 
-import { FaFileDownload as ResumeIcon } from "react-icons/fa";
-
 import { ImLinkedin as LinkedInIcon } from "react-icons/im";
 import { FaGithub as GithubIcon } from "react-icons/fa";
 
@@ -20,8 +18,8 @@ const Intro = () => {
             </div>
           </div>
           <p className="i-desc">
-            Blending software mastery and cybersecurity commitment, I'm on a
-            quest for comprehensive virtual protection.
+            Blending software engineering skills with a cybersecurity mindset to
+            build secure, innovative, and scalable solutions.
           </p>
         </div>
         <svg
@@ -102,18 +100,6 @@ const Intro = () => {
               className="i-link"
             />
             <span className="tooltiptext">Github</span>
-          </div>
-          <div className="tooltip">
-            <ResumeIcon
-              className="i-link"
-              onClick={() => {
-                window.open(
-                  "https://drive.usercontent.google.com/download?id=1ZxLyPG-p6N1UyDPrJdlmV0CDI-okddVV&export=download"
-                );
-              }}
-              style={{ fontSize: "2rem" }}
-            />
-            <span className="tooltiptext">My Resume</span>
           </div>
         </div>
       </div>

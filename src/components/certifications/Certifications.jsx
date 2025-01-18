@@ -2,6 +2,7 @@ import { Carousel } from "antd";
 import "./certifications.css";
 import PJPT from "../../img/pjpt.png";
 import Hackerrank from "../../img/js.png";
+import FrontendDeveloper from "../../img/frontend.png";
 
 const Certifications = () => {
   return (
@@ -37,6 +38,20 @@ const Certifications = () => {
                   );
                 }}
                 alt="Hackerank Intermediate Javascript Developer Certificate"
+              />
+            </div>
+          </div>
+          <div>
+            <div className="cert-carousel-content-style">
+              <img
+                className="cert-carousel-img-style"
+                src={FrontendDeveloper}
+                onClick={() => {
+                  window.open(
+                    "https://www.hackerrank.com/certificates/51676f9b0980"
+                  );
+                }}
+                alt="Hackerank Frontend Developer (React) Certificate"
               />
             </div>
           </div>
