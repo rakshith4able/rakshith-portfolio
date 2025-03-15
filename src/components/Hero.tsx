@@ -1,8 +1,16 @@
+import Image from "next/image";
+
+import { FaLocationArrow } from "react-icons/fa6";
+import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { TypewriterEffectLoop } from "./ui/TypewriterEffectLoop";
+import { iconButtonSizes, socialLinks, titles } from "@/lib/consts";
+import IconButton from "./ui/IconButton";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="h-screen">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -14,12 +22,62 @@ const Hero = () => {
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
+      <div
+        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+       absolute top-0 left-0 flex items-center justify-center"
+      >
+        <div
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+        />
+      </div>
 
-      <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.3] relative flex items-center justify-center">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-        <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-linear-to-b from-neutral-200 to-neutral-500 py-8">
-          fsdfsd
-        </p>
+      <div className="h-full flex justify-center relative z-10">
+        <div className="max-w-[90vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+          <Image
+            src="/me.png"
+            className="object-cover my-10 rounded-full"
+            width={100}
+            height={100}
+            alt="My Picture"
+          />
+          <p className="uppercase tracking-widest text-md text-center text-blue-100 max-w-80">
+            Hello, I&apos;m
+          </p>
+
+          <TextGenerateEffect
+            words="Rakshith Raj"
+            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+          />
+
+          <TypewriterEffectLoop
+            className="mb-5 text-center font-semibold text-xl sm:text-lg lg:text-4xl"
+            words={[...titles]}
+          />
+
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            Blending software engineering skills with a cybersecurity mindset to
+            build secure, innovative, and scalable solutions.
+          </p>
+
+          <div className="flex space-x-5 md:m-0 my-5 ">
+            {socialLinks.map((socialLink) => (
+              <a href={socialLink.link} target="_blank" key={socialLink.name}>
+                <IconButton
+                  icon={<socialLink.icon size={socialLink.iconSize} />}
+                />
+              </a>
+            ))}
+          </div>
+
+          <a href="#about">
+            <MagicButton
+              title="Show my work"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
