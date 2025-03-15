@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 "use client";
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
@@ -28,7 +30,7 @@ export const TextGenerateEffect = ({
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
+      <motion.h1 ref={scope}>
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
@@ -41,7 +43,7 @@ export const TextGenerateEffect = ({
             </motion.span>
           );
         })}
-      </motion.div>
+      </motion.h1>
     );
   };
 
