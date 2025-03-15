@@ -5,10 +5,11 @@ import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { TypewriterEffectLoop } from "./ui/TypewriterEffectLoop";
-import { iconButtonSizes, socialLinks, titles } from "@/lib/consts";
 import IconButton from "./ui/IconButton";
+import { portfolioContent } from "@/data";
 
 const Hero = () => {
+  const { name, description, titles, socialLinks } = portfolioContent;
   return (
     <div className="h-screen">
       <div>
@@ -46,7 +47,7 @@ const Hero = () => {
           </p>
 
           <TextGenerateEffect
-            words="Rakshith Raj"
+            words={name}
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
@@ -56,8 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Blending software engineering skills with a cybersecurity mindset to
-            build secure, innovative, and scalable solutions.
+            {description}
           </p>
 
           <div className="flex space-x-5 md:m-0 my-5 ">
