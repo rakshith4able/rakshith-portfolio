@@ -1,15 +1,8 @@
-/* eslint-disable */
-
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
 import ThreeGlobe from "three-globe";
-import {
-  useThree,
-  type ThreeElement,
-  Canvas,
-  extend,
-} from "@react-three/fiber";
+import { useThree, ThreeElement, Canvas, extend } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import countries from "@/data/globe.json";
 declare module "@react-three/fiber" {
@@ -98,6 +91,13 @@ export function Globe({ globeConfig, data }: WorldProps) {
     ...globeConfig,
   };
 
+  useEffect(() => {
+    if (globeRef.current) {
+      _buildData();
+      _buildMaterial();
+    }
+  }, [globeRef.current]);
+
   const _buildMaterial = () => {
     if (!globeRef.current) return;
 
@@ -115,7 +115,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
   const _buildData = () => {
     const arcs = data;
-    const points = [];
+    let points = [];
     for (let i = 0; i < arcs.length; i++) {
       const arc = arcs[i];
       const rgb = hexToRgb(arc.color) as { r: number; g: number; b: number };
@@ -134,13 +134,6 @@ export function Globe({ globeConfig, data }: WorldProps) {
         lng: arc.endLng,
       });
     }
-
-    useEffect(() => {
-      if (globeRef.current) {
-        _buildData();
-        _buildMaterial();
-      }
-    }, [globeRef.current, _buildData, _buildMaterial]);
 
     // remove duplicates for same lat and lng
     const filteredPoints = points.filter(
@@ -164,7 +157,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
         .showAtmosphere(defaultProps.showAtmosphere)
         .atmosphereColor(defaultProps.atmosphereColor)
         .atmosphereAltitude(defaultProps.atmosphereAltitude)
-        .hexPolygonColor(() => {
+        .hexPolygonColor((e) => {
           return defaultProps.polygonColor;
         });
       startAnimation();
