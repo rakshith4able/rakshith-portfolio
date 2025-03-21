@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { FaLocationArrow } from "react-icons/fa6";
-import MagicButton from "./ui/MagicButton";
+import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { TypewriterEffectLoop } from "./ui/TypewriterEffectLoop";
