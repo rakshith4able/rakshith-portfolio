@@ -100,6 +100,18 @@ const config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        moveUpDown: {
+          "0%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(-100%)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
         shimmer: {
           from: {
             backgroundPosition: "0 0",
@@ -152,12 +164,13 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
+        skills: "moveVertical 10s ease infinite",
         first: "moveVertical 30s ease infinite",
-        second: "moveInCircle 20s reverse infinite",
-        third: "moveInCircle 40s linear infinite",
+        secord: "moveInCircle 40s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
-        scroll:
+        scrnd: "moveInCircle 20s reverse infinite",
+        thioll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
     },
